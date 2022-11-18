@@ -33,18 +33,35 @@ int main()
 				bool new_line_bool = false;
 				switch (new_line_answer)
 				{
-					case 'y': new_line_bool = true; break;
-					case 'n': new_line_bool = false; break;
+					case 'e': new_line_bool = true; break;
+					case 's': new_line_bool = false; break;
 					default: return 0;
 				}
 
 				cout << endl;
 				string filename = "";
 
-				for (int i = 0; i < banknotes_count; i++) {
-					filename = "euro." + to_string(pow(rand(), 3)) + "." + to_string(i + 1) + ".bin";
-					ofstream banknote(filename);
+#include <iostream>
+using namespace std;
 
+int main() {
+    int n;
+    long factorial = 1.0;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    if (n < 0)
+        cout << "Error! Factorial of a negative number doesn't exist.";
+    else {
+        for(int i = 1; i <= n; ++i) {
+            factorial *= i;
+        }
+        cout << "Factorial of " << n << " = " << factorial;    
+    }
+
+    return 0;
+}
 					for (int t = 0; t < banknote_power; t++)
 					{
 						for (int g = 0; g < USHRT_MAX; g++)
