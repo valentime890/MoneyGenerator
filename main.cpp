@@ -54,7 +54,7 @@ int main()
 								banknote << to_string(rand()) << endl;
 							}
 							else {
-								banknote << to_string(rand());
+								banknote << to_string(rand());//111111111111111111
 							}
 						}
 						cout << i << "/" << banknotes_count << " $ " << t + 1 << "/" << banknote_power << endl;
