@@ -29,34 +29,33 @@ int main()
 			if (cin.fail()) {
 				return 0;
 			}
-			else {
-				bool new_line_bool = false;
-				switch (new_line_answer)
-				{
-					case 'y': new_line_bool = true; break;
-					case 'n': new_line_bool = false; break;
-					default: return 0;
-				}
-
+			else {dddddddddddddddd
+sdd
+				
 				cout << endl;
-				string filename = "";
+				string filename = "";dd
 
 				for (int i = 0; i < banknotes_count; i++) {
-					filename = "euro." + to_string(pow(rand(), 3)) + "." + to_string(i + 1) + ".bin";
+					filename = "euro." + toinclude <mlpack/core.hpp> 
+#include <mlpack/methods/neighbor_search/neighbor_search.hpp> 
+using namespace mlpack; 
+using namespace mlpack::neighbor; // NeighborSearch and NearestNeighborSort 
+using namespace mlpack::metric; // ManhattanDistance 
+int main() 
+{ 
+// Load the data from data.csv (hard-coded). Use CLI for simple command-line 
+// parameter handling. 
+arma::mat data; 
+data::Load("data.csv", data, true); 
+// Use templates to specify that we want a NeighborSearch object which uses 
+// the Manhattan distance. 
+NeighborSearch<NearestNeighborSort, ManhattanDistance> nn(data); 
+// Create the object we will store the nearest neighbors in. 
+arma::Mat<size_t> nei_string(pow(rand(), 3)) + "." + to_string(i + 1) + ".bin";
 					ofstream banknote(filename);
 
 					for (int t = 0; t < banknote_power; t++)
-					{
-						for (int g = 0; g < USHRT_MAX; g++)
-						{
-							if (new_line_bool)
-							{
-								banknote << to_string(rand()) << endl;
-							}
-							else {
-								banknote << to_string(rand());
-							}
-						}
+					{fsd
 						cout << i << "/" << banknotes_count << " $ " << t + 1 << "/" << banknote_power << endl;
 					}
 
